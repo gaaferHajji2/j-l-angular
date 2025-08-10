@@ -9,4 +9,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('hello-world');
+  protected readonly description = "My Name is Jafar Loka";
 }
