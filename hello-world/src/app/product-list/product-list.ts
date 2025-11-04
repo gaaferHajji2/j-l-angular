@@ -8,4 +8,5 @@ import { Component, signal } from '@angular/core';
 })
 export class ProductList {
   protected readonly title = signal('product list page')
+  protected readonly dataTitle = 'test'
 }
