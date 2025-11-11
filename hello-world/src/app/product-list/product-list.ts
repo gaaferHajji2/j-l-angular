@@ -10,6 +10,8 @@ import { Product } from './product';
 export class ProductList {
   protected readonly title = signal('product list page')
   protected readonly dataTitle = 'test'
+  protected selectedProduct: Product | undefined;
+  
   products: Product[] = [
     {title: 'JLoka-01', id: 1},
     {title: 'JLoka-02', id: 2},
