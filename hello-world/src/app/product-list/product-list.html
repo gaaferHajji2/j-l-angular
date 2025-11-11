@@ -11,6 +11,4 @@
     }
 </ul>
 
-@if(selectedProduct) {
-    <p>The Selected Product is: {{ selectedProduct.title }}</p>
-}
+<app-product-detail [product]="selectedProduct"></app-product-detail>
