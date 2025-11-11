@@ -2,13 +2,11 @@
 <div>title: {{ title() }}</div>
 <p [attr.data-title]="dataTitle">Testing</p>
 <p [attr.data-test]="'test'">For testing Only</p>
-@if(products.length > 0 ) {
-    <p>products: {{ products.length }}</p>
-    <ul class="pill-group">
-        @for (product of products; track product.id) {
-            <li class="pill">{{product.title}}</li>
-        }
-    </ul>
-} @else {
-    <p>No products found!!!</p>
-}
+<p>products: {{ products.length }}</p>
+<ul class="pill-group">
+    @for (product of products; track product.id) {
+        <li class="pill">{{product.title}}</li>
+    } @empty {
+            <p>No products found!!!</p>
+    }
+</ul>
