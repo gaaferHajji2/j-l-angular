@@ -10,7 +10,7 @@
 
 button.primary {
     padding: 10px;
-    norder: 1px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     background: var(--primary-color);
     color: white;
     border-radius: 8px
