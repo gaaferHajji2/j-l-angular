@@ -21,7 +21,14 @@
 }
 
 .listing-location::before {
-  content: url('/public/location-pin.svg') / '';
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url('/location-pin.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  translate: 0px 5px;
 }
 
 section.listing a {
