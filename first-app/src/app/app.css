@@ -1,6 +1,9 @@
-
-
 .brand-name {
     display: flex;
     align-items: center;
+    margin-left: 24px;
+}
+
+.brand-name p {
+    translate: 0px 5px;
 }
