@@ -9,5 +9,5 @@ import { Home } from './home/home';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('first-app');
+  protected readonly title = signal('house-app');
 }
