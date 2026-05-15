@@ -12,10 +12,9 @@ import {HousingLocationInfo} from '../housinglocation';
 export class Details {
     route: ActivatedRoute = inject(ActivatedRoute);
     housingService: HousingService = inject(HousingService)
-    housingLocationId = -1;
     housingLocation: HousingLocationInfo | undefined = undefined
     constructor() {
-      this.housingLocationId = Number(this.route.snapshot.params['id']);
-      this.housingLocation = this.housingService.getHousingLocationById(this.housingLocationId)
+      const housingLocationId = Number(this.route.snapshot.params['id']);
+      this.housingLocation = this.housingService.getHousingLocationById(housingLocationId)
     }
 }
