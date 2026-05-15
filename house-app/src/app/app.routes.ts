@@ -9,7 +9,7 @@ export const routes: Routes = [
         'title': 'House Application',
     },
     {
-        'path': '/details/:id',
+        'path': 'details/:id',
         'component': Details,
         'title': 'House Details'
     }

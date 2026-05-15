@@ -1,12 +1,11 @@
 <main>
-      <a [routerLink]="['/']">
-        <header class="brand-name">
-          <img class="brand-logo" src="/home.apng.png" alt="logo" aria-hidden="true" />
-          <p>Homes</p>
-        </header>
-      </a>
-      <section class="content">
-        <router-outlet />
-      </section>
-    </main>
-<router-outlet />
+  <a [routerLink]="['/']">
+    <header class="brand-name">
+      <img class="brand-logo" src="/home.apng.png" alt="logo" aria-hidden="true" />
+      <p>Homes</p>
+    </header>
+  </a>
+  <section class="content">
+    <router-outlet></router-outlet>
+  </section>
+</main>
