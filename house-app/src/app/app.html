@@ -1,10 +1,12 @@
 <main>
-      <header class="brand-name">
-        <img class="brand-logo" src="/home.apng.png" alt="logo" aria-hidden="true" />
-        <p>Homes</p>
-      </header>
+      <a [routerLink="/"]>
+        <header class="brand-name">
+          <img class="brand-logo" src="/home.apng.png" alt="logo" aria-hidden="true" />
+          <p>Homes</p>
+        </header>
+      </a>
       <section class="content">
-        <app-home />
+        <router-outlet />
       </section>
     </main>
 <router-outlet />
